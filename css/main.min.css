@@ -1,0 +1,123 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7fffd4;
+  font-family: Arial, sans-serif;
+}
+img {
+  vertical-align: middle;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header-nav {
+  margin-left: auto;
+}
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-list-item:nth-child(2) {
+  position: relative;
+}
+.nav-list-item:nth-child(2):hover .drop-list {
+  display: block;
+}
+.nav-list-link {
+  padding: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+  text-decoration: none;
+}
+.drop-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  list-style-type: none;
+}
+.drop-item {
+  width: 100%;
+  text-align: center;
+}
+.drop-link {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+.drop-link:hover {
+  background-color: #003cff;
+  color: #fff;
+}
+.droop-list {
+  position: absolute;
+  top: 0;
+  left: 102px;
+  width: 95px;
+  right: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  list-style-type: none;
+}
+.droop-item {
+  width: 100%;
+  text-align: center;
+}
+.drop-item:nth-child(4) {
+  position: relative;
+}
+.drop-item:nth-child(4):hover .droop-list {
+  display: block;
+}
+.droop-link {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+.droop-link:hover {
+  background-color: #ff0037;
+  color: #fff;
+}
